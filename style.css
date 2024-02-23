@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #262D2A;
+}
+/* This is for the horizontal scroll container.
+width = page * 100vw */
+.container {
+    display: flex;
+    width: 500vw;
+    margin: 0;
+
+    section {
+        width: 100vw;
+        padding: 5vw 10vw 60vw;
+    }
+
+}
+
+.svg_div {
+    display: flex;
+    justify-content: center;
+    float: right;
+    padding-left: 10vw;
+    margin-right: 100px;
+}
+
+.upper-p {
+    padding-top: 50px;
+}
+
+.road{
+    background-color: #414E48;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0vh;
+    margin: 0;
+    padding: 0;
+}
+
+#animation {
+    width: 383px;
+    height: 383px;
+    background-image: url(./7keyframes.png);
+    background-size: 2681px;
+    background-repeat: repeat;
+    position: fixed;
+    bottom: 3px;
+    left: 50px;
+  } 
+
+  button {
+    position: fixed;;
+    bottom:10px;
+    left: 80vw;
+    z-index: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #414E48;
+    background-color: #B1D353;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #4AC6BE;
+    color: #FFFFFF;
+}
+
+.speech-bubble {
+    z-index: 2;
+    position: fixed;
+    bottom: 30vh; 
+    left: 300px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 1; /* Start as invisible */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transitions for opacity and movement */
+}
+
+#bubble1 {
+    width: 300px;
+}
