@@ -17,7 +17,7 @@ body {
 width = page * 100vw */
 .container {
     display: flex;
-    width: 1100vw;
+    width: 1800vw;
     margin: 0;
 
     section {
@@ -80,10 +80,16 @@ button:hover {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -92,4 +98,10 @@ p {
     justify-content: center;
     align-items: center;
     height: 65vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
 }
