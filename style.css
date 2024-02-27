@@ -60,7 +60,8 @@ width = page * 100vw */
     left: 50px;
   } 
 
-  button {
+.music-button {
+    font-family: "Urbanist", sans-serif;
     position: fixed;;
     bottom:10px;
     left: 80vw;
@@ -110,4 +111,20 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5vw;
+}
+
+#loop-img-btn2 {
+    font-family: "Urbanist", sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #414E48;
+    background-color: #B1D353;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#loop-img-btn2:hover {
+    background-color: #4AC6BE;
+    color: #FFFFFF;
 }
