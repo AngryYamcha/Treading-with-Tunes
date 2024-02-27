@@ -17,7 +17,7 @@ body {
 width = page * 100vw */
 .container {
     display: flex;
-    width: 500vw;
+    width: 1100vw;
     margin: 0;
 
     section {
@@ -79,18 +79,17 @@ button:hover {
     color: #FFFFFF;
 }
 
-.speech-bubble {
-    z-index: 2;
-    position: fixed;
-    bottom: 30vh; 
-    left: 300px;
-    background-color: black;
-    padding: 20px;
-    border-radius: 20px;
-    opacity: 1; /* Start as invisible */
-    transition: opacity 0.5s, transform 0.5s; /* Smooth transitions for opacity and movement */
+p {
+    font-size: 1.1rem;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
-#bubble1 {
-    width: 300px;
+.big-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
 }

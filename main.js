@@ -12,7 +12,7 @@ let scrollTween = gsap.to(sections, {
     pin: true,
     scrub: 1,
     end: "clamp(3000px)",
-    //snap: 1 / (sections.length - 1),
+    // snap: 1 / (sections.length - 1),
     // markers: true,
   }
 });
