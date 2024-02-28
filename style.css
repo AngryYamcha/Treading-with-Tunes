@@ -2,23 +2,27 @@ body {
     height: 100vh;
     margin: 0;
     color: white;
+    overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.wrapper {
+/* .wrapper {
     overflow-x: hidden;
     position: relative;
     background-color: #262D2A;
-}
+} */
 /* This is for the horizontal scroll container.
 width = page * 100vw */
 .container {
     display: flex;
     width: 1800vw;
     margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #262D2A;
 
     section {
         width: 100vw;
@@ -50,21 +54,25 @@ width = page * 100vw */
 }
 
 #animation {
+    z-index: 0;
     width: 383px;
     height: 383px;
     background-image: url(./7keyframes.png);
     background-size: 2681px;
     background-repeat: repeat;
-    position: fixed;
-    bottom: 3px;
-    left: 50px;
   } 
 
+.animation-container {
+    position: fixed;
+    z-index: 1;
+    top: 50vh;
+    left: 775px;
+}
 .music-button {
     font-family: "Urbanist", sans-serif;
     position: fixed;;
     bottom:10px;
-    left: 80vw;
+    left: 5vw;
     z-index: 1;
     padding: 10px 20px;
     font-size: 16px;
@@ -127,4 +135,12 @@ h2 {
 #loop-img-btn2:hover {
     background-color: #4AC6BE;
     color: #FFFFFF;
+}
+
+.hide-character {
+    position: relative;
+    background-color:#262D2A;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
 }
