@@ -66,7 +66,7 @@ width = page * 100vw */
     position: fixed;
     z-index: 1;
     top: 50vh;
-    left: 775px;
+    left: 60vw;
 }
 .music-button {
     font-family: "Urbanist", sans-serif;
@@ -83,7 +83,7 @@ width = page * 100vw */
     cursor: pointer
 }
 
-button:hover {
+.music-button:hover {
     background-color: #4AC6BE;
     color: #FFFFFF;
 }
@@ -103,7 +103,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Righteous", sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -121,20 +121,32 @@ h2 {
     gap: 5vw;
 }
 
-#loop-img-btn2 {
+.loop-btn-style {
     font-family: "Urbanist", sans-serif;
     padding: 10px 20px;
     font-size: 16px;
-    color: #414E48;
-    background-color: #B1D353;
-    border: none;
+    color: #B1D353;
+    background-color: #262D2A;
+    border: 2px solid #B1D353;
     border-radius: 5px;
     cursor: pointer
 }
 
-#loop-img-btn2:hover {
-    background-color: #4AC6BE;
-    color: #FFFFFF;
+.loop-btn-style:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.loop-btn-selected {
+    font-family: "Urbanist", sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #262D2A;
+    background-color: #B1D353;
+    border: 2px solid #B1D353;
+    border-radius: 5px;
+    cursor: pointer
 }
 
 .hide-character {
@@ -143,4 +155,166 @@ h2 {
     z-index: 2;
     height: 100vh;
     width: 100vw;
+}
+
+.toggle-buttons-container {
+    margin-left: 93px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.toggle-buttons {
+    font-family: "Urbanist", sans-serif;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rock btn */
+.rock-btn {
+    background-color:#262D2A;
+    border: 2px solid #B1D353;
+    color: #B1D353;
+}
+
+.rock-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.rock-btn-clicked {
+    border: 2px solid #B1D353;
+    background-color: #B1D353;
+    color: #262D2A; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* asian-pop btn */
+.asian-pop-btn {
+    background-color:#262D2A;
+    border: 2px solid #8DD3D4;
+    color: #8DD3D4;
+}
+
+.asian-pop-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.asian-pop-btn-clicked {
+    border: 2px solid #8DD3D4;
+    background-color: #8DD3D4;
+    color: #262D2A; 
+}
+
+/* rnb btn */
+.rnb-btn {
+    background-color:#262D2A;
+    border: 2px solid #4AC6BE;
+    color: #4AC6BE;
+}
+
+.rnb-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.rnb-btn-clicked {
+    border: 2px solid #4AC6BE;
+    background-color: #4AC6BE;
+    color: #262D2A; 
+}
+
+/* edm btn */
+.edm-btn {
+    background-color:#262D2A;
+    border: 2px solid #ECEA6A;
+    color: #ECEA6A;
+}
+
+.edm-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.edm-btn-clicked {
+    border: 2px solid #ECEA6A;
+    background-color: #ECEA6A;
+    color: #262D2A; 
+}
+
+/* alt/indie btn */
+.alt-indie-btn {
+    background-color:#262D2A;
+    border: 2px solid #91CE9D;
+    color: #91CE9D;
+}
+
+.alt-indie-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.alt-indie-btn-clicked {
+    border: 2px solid #91CE9D;
+    background-color: #91CE9D;
+    color: #262D2A; 
+}
+
+/* folk btn */
+.folk-btn {
+    background-color:#262D2A;
+    border: 2px solid #D9E588;
+    color: #D9E588;
+}
+
+.folk-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.folk-btn-clicked {
+    border: 2px solid #D9E588;
+    background-color: #D9E588;
+    color: #262D2A; 
+}
+
+/* pop btn */
+.pop-btn {
+    background-color:#262D2A;
+    border: 2px solid #93CB74;
+    color: #93CB74;
+}
+
+.pop-btn:hover {
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    color: #262D2A;
+}
+
+.pop-btn-clicked {
+    border: 2px solid #93CB74;
+    background-color: #93CB74;
+    color: #262D2A; 
+}
+
+.toggle-img {
+    height: 55vh;
+    margin-top: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }

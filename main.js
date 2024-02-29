@@ -12,7 +12,7 @@ let scrollTween = gsap.to(sections, {
     pin: true,
     scrub: 1,
     end: "clamp(3000px)",
-    // snap: 1 / (sections.length - 1),
+    snap: 1 / (sections.length - 1),
     // markers: true,
   }
 });
@@ -45,35 +45,16 @@ sections.forEach((section) => {
   });
 });
 
-// bubble.forEach((bubble) => {
-//   // grab the scoped text
-//   let text = bubble.querySelectorAll(".anim-bubble");
-  
-//   // bump out if there's no items to animate
-//   if(text.length === 0)  return 
-  
-//   // do a little stagger
-//   gsap.from(text, {
-//     opacity: 0,
-//     duration: 2,
-//     ease: "elastic",
-//     stagger: 0.1,
-//     scrollTrigger: {
-//       trigger: section,
-//     //   markers: true
-//     }
+// document.addEventListener('wheel', function(e) {
+//   // Prevent the default scroll behavior
+//   e.preventDefault();
+
+//   // Scale the deltaY by 75% to reduce scroll sensitivity
+//   const scrollAmount = e.deltaY * 0.9;
+
+//   // Scroll the page by the custom amount
+//   window.scrollBy({
+//     top: scrollAmount,
+//     behavior: 'smooth' // Optional: adds smooth scrolling
 //   });
-// });
-// let scrollspeech = gsap.to(bubble, {
-//   yPercent: -100,
-//   opacity: 1,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".container",
-//     // pin: true,
-//     scrub: 1,
-//     end: "clamp(600px)",
-//     // snap: 1 / (sections.length - 1),
-//     // markers: true,
-//   }
-// });
+// }, { passive: false }); // passive: false is necessary to enable preventDefault
