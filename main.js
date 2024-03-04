@@ -45,16 +45,16 @@ sections.forEach((section) => {
   });
 });
 
-// document.addEventListener('wheel', function(e) {
-//   // Prevent the default scroll behavior
-//   e.preventDefault();
+document.addEventListener('wheel', function(e) {
+  // Prevent the default scroll behavior
+  e.preventDefault();
 
-//   // Scale the deltaY by 75% to reduce scroll sensitivity
-//   const scrollAmount = e.deltaY * 0.9;
+  // Scale the deltaY by 75% to reduce scroll sensitivity
+  const scrollAmount = e.deltaY * 0.6;
 
-//   // Scroll the page by the custom amount
-//   window.scrollBy({
-//     top: scrollAmount,
-//     behavior: 'smooth' // Optional: adds smooth scrolling
-//   });
-// }, { passive: false }); // passive: false is necessary to enable preventDefault
+  // Scroll the page by the custom amount
+  window.scrollBy({
+    top: scrollAmount,
+    // behavior: 'smooth' // Optional: adds smooth scrolling
+  });
+}, { passive: false }); // passive: false is necessary to enable preventDefault
