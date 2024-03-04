@@ -18,7 +18,7 @@ body {
 width = page * 100vw */
 .container {
     display: flex;
-    width: 1800vw;
+    width: 1900vw;
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -89,10 +89,10 @@ width = page * 100vw */
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
 }
 
