@@ -3,9 +3,9 @@ function togglePlayPause() {
     var button = document.querySelector('.music-button'); // Assuming it's the only button, else use a class or id selector
     if (audio.paused) {
         audio.play();
-        button.innerHTML = 'Music On';
+        button.innerHTML = 'Music ON';
     } else {
         audio.pause();
-        button.innerHTML = 'Music Off';
+        button.innerHTML = 'Music OFF';
     }
 }

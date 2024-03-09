@@ -18,7 +18,7 @@ body {
 width = page * 100vw */
 .container {
     display: flex;
-    width: 1900vw;
+    width: 2100vw;
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -37,10 +37,6 @@ width = page * 100vw */
     float: right;
     padding-left: 10vw;
     margin-right: 100px;
-}
-
-.upper-p {
-    padding-top: 50px;
 }
 
 .road{
@@ -72,7 +68,7 @@ width = page * 100vw */
     font-family: "Urbanist", sans-serif;
     position: fixed;;
     bottom:10px;
-    left: 5vw;
+    left: 8vw;
     z-index: 1;
     padding: 10px 20px;
     font-size: 16px;
@@ -89,17 +85,20 @@ width = page * 100vw */
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    line-height: 130%;
 }
 
 h1 {
+    font-size: 1.2rem;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -313,7 +312,7 @@ h2 {
 
 .toggle-img {
     height: 55vh;
-    margin-top: 70px;
+    margin-top: 50px;
     position: absolute;
     left: 0px;
     top: 0px;

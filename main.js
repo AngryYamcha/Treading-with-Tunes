@@ -50,7 +50,7 @@ document.addEventListener('wheel', function(e) {
   e.preventDefault();
 
   // Scale the deltaY by 75% to reduce scroll sensitivity
-  const scrollAmount = e.deltaY * 0.6;
+  const scrollAmount = e.deltaY * 0.25;
 
   // Scroll the page by the custom amount
   window.scrollBy({

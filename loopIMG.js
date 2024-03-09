@@ -1,10 +1,10 @@
 const rockBtn = document.querySelector('.rock-btn');
 const asianPopBtn = document.querySelector('.asian-pop-btn');
-const rnbBtn = document.querySelector('.rnb-btn');
+const rnbBtn = document.querySelector('.rnb-btn-clicked');
 const edmBtn = document.querySelector('.edm-btn');
 const altIndieBtn = document.querySelector('.alt-indie-btn');
 const folkBtn = document.querySelector('.folk-btn');
-const popBtn = document.querySelector('.pop-btn');
+const popBtn = document.querySelector('.pop-btn-clicked');
 
 // const toggleBtns = [
 //     rockBtn,
@@ -32,25 +32,25 @@ loopBtn.addEventListener("click", () => {
 });
 
 loopBtn.addEventListener("click", function() {
-    this.classList.toggle("loop-btn-selected");
-    loopBtn2.classList.toggle("loop-btn-selected");
-    this.classList.toggle("loop-btn-style");
-    loopBtn2.classList.toggle("loop-btn-style");
+    if (this.classList.contains("loop-btn-style")) {
+        this.classList.toggle("loop-btn-selected");
+        loopBtn2.classList.toggle("loop-btn-selected");
+        this.classList.toggle("loop-btn-style");
+        loopBtn2.classList.toggle("loop-btn-style");
+    };
 });
 
 loopBtn2.addEventListener("click", () => {
     imgForLoop2.setAttribute("src", "./img/" + imageSet2[1]);
-    this.classList.toggle("loop-btn-selected");
-    loopBtn.classList.toggle("loop-btn-selected");
-    this.classList.toggle("loop-btn-style");
-    loopBtn.classList.toggle("loop-btn-style");
 });
 
 loopBtn2.addEventListener("click", function() {
-    this.classList.toggle("loop-btn-selected");
-    loopBtn.classList.toggle("loop-btn-selected");
-    this.classList.toggle("loop-btn-style");
-    loopBtn.classList.toggle("loop-btn-style");
+    if (this.classList.contains("loop-btn-style")) {
+        this.classList.toggle("loop-btn-selected");
+        loopBtn.classList.toggle("loop-btn-selected");
+        this.classList.toggle("loop-btn-style");
+        loopBtn.classList.toggle("loop-btn-style");
+    };
 });
 
 // btns
@@ -92,8 +92,8 @@ altIndieBtn.addEventListener('click', function() {
 
 folkBtn.addEventListener('click', function() {
     // Toggle the 'button-clicked' class on click
-    this.classList.toggle('folk-btn-clicked');
     this.classList.toggle('folk-btn');
+    this.classList.toggle('folk-btn-clicked');
     document.querySelector('.folk-img').classList.toggle('hidden');
 });
 
